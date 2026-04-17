@@ -21,7 +21,14 @@ CUDA 입문자라면 **반드시 [00-cuda-basics](./00-cuda-basics.md)를 먼저
 | 10 | [HGEMM — WMMA / MMA Tensor Cores](./kernels/10-hgemm.md) | ⭐⭐⭐⭐ | `mma.m16n8k16`, PTX, Swizzle |
 | 11 | [Flash Attention](./kernels/11-flash-attn.md) | ⭐⭐⭐⭐⭐ | Split-Q/KV, Online Softmax, SRAM 타일링 |
 | 12 | [Swizzle — 뱅크 충돌 회피 패턴](./kernels/12-swizzle.md) | ⭐⭐⭐⭐ | XOR 기반 주소 재배치 |
-| 99 | [나머지 커널 요약 (sgemv, embedding, rope, nms 등)](./kernels/99-others.md) | — | 앞서 배운 패턴의 응용 |
+| 13 | [SGEMV / HGEMV — 행렬×벡터](./kernels/13-sgemv-hgemv.md) | ⭐⭐ | Warp-per-row, K별 전략 |
+| 14 | [Embedding — Gather 연산](./kernels/14-embedding.md) | ⭐ | 간접 주소, L2 재사용 |
+| 15 | [RoPE — 회전 위치 임베딩](./kernels/15-rope.md) | ⭐⭐ | 쌍 단위 2D 회전, sin/cos 인라인 |
+| 16 | [NMS — Non-Maximum Suppression](./kernels/16-nms.md) | ⭐⭐ | IoU 계산, 의존성 다루기 |
+| 17 | [Transformer Block Fusion](./kernels/17-transformer.md) | ⭐⭐⭐ | 커널 합치기의 경제학 |
+| 18 | [WS-HGEMM — Warp Specialization](./kernels/18-ws-hgemm.md) | ⭐⭐⭐⭐⭐ | Hopper TMA + WGMMA + CuTe |
+| 19 | [HardSwish & HardShrink](./kernels/19-hardswish-hardshrink.md) | ⭐ | 분기 활성화, SEL 명령 |
+| 99 | [나머지 커널 요약 가이드](./kernels/99-others.md) | — | 미커버 항목 간단 정리 |
 
 ## 🎯 이 문서가 지향하는 것
 
