@@ -31,7 +31,7 @@ xcode-select --install   # GUI 팝업에서 '설치' 클릭, 약 5–10분
 |------|------|------------|
 | **A. 면접 로드맵** | [`nvidia-cpp/`](./nvidia-cpp/) | 6주짜리 C++ + 시스템 + GPU 사고법 마스터 플랜, 체크리스트 |
 | **B. 실행 가능한 데모** | [`demos/`](./demos/) | NVIDIA GPU 없이 Mac에서 빌드되는 8개 C++ 데모 (CUDA 개념을 CPU로 매핑) |
-| **C. 커널 정독** | [`kernels/`](./kernels/) | LeetCUDA 19개 CUDA 커널의 한국어 라인-바이-라인 해설 |
+| **C. 커널 정독** | [`kernels/`](./kernels/) | LeetCUDA의 주요 CUDA 커널 19종 + 기타 커널 정리(`99-others.md`)의 한국어 라인-바이-라인 해설 |
 
 면접 준비라면 **A → B → C 순**이 효과적입니다. 우선 A에서 학습 지도를 잡고, B에서 손과 머리에 새기고, C에서 실제 GPU 코드의 깊이를 흡수.
 
